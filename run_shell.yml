@@ -4,9 +4,9 @@
   gather_facts: true
   tasks:
     - name: Run the specified shell command
-      shell: '{{hostname}}'
+      shell: echo $HOSTNAME
       register: result
 
     - name: Display the outcome
       debug:
-        msg: '{{ result }}'
+        var: result
