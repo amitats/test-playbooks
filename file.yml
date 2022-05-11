@@ -3,7 +3,7 @@
 - hosts: all
   gather_facts: false
   vars:
-    file_name: '/tmp/test'
+    file_name: '/tmp/test1'
   tasks:
     - file:
         path: '{{file_name}}'
